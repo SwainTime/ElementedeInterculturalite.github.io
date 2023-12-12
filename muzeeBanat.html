@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muzeele Romaniei</title>
+        <link rel="stylesheet" href = "styleMuzee.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="topnav">
+            <div class = "titluTopNav">
+                <div class = "numeProiect"><strong><u>Interferențe culturale în spațiul dobrogean.<br> Muzee etnografice ale României</u></strong></div>
+                <div class="vl"></div>
+            </div>
+            <a href="index.html"><strong>Introducere</strong></a>
+            <a class="active" href="muzeeDobrogea.html"><strong>Muzee</strong></a>
+            <a href="traditii.html"><strong>Tradiții și obiceuri</strong></a>
+        </div>
+        
+        </div>
+        <div id = "main">
+            <div id="my-titlu">
+                <p><strong><h1 id = "title">Muzeele României</h1></strong></p>
+            </div>
+
+            <div class="regiuni">
+                <a id="Dobrogea" href = "muzeeDobrogea.html#Dobrogea"><strong><u>Dobrogea</u></strong></a>
+                <a id="Muntenia" href = "muzeeMuntenia.html#Muntenia"><strong><u>Muntenia</u></strong></a>
+                <a id="Oltenia" href = "muzeeOltenia.html#Oltenia"><strong><u>Oltenia</u></strong></a>
+                <a id="Banat" href = "muzeeBanat.html#Banat" class="active"><strong><u>Banat</u></strong></a>
+                <a id="Crisana" href = "muzeeCrisana.html#Crisana"><strong><u>Crișana</u></strong></a>
+                <a id="Maramures" href = "muzeeMaramures.html#Maramures"><strong><u>Maramureș</u></strong></a>
+                <a id="Transilvania" href = "muzeeTransilvania.html#Transilvania"><strong><u>Transilvania</u></strong></a>
+                <a id="Bucovina" href = "muzeeBucovina.html#Bucovina"><strong><u>Bucovina</u></strong></a>
+                <a id="Moldova" href = "muzeeMoldova.html#Moldova"><strong><u>Moldova</u></strong></a>
+            </div>
+                
+            <div id = "my-background">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade" name = "slider0">
+                        <div class="numbertext">1 / 3</div>
+                            <img src="https://planiada.ro/www/uploads/954/9.Muzeul_Satului_B_n_ean_7.jpg" style="width:100%">
+                        <div class="text">Interior</div>
+                    </div>
+                
+                    <div class="mySlides fade" name = "slider0">
+                        <div class="numbertext">2 / 3</div>
+                            <img src="https://vatra-mcp.ro/wp-content/uploads/2022/06/Muzeul-Satului-Banatean-3.jpg" style ="width:100%">
+                        <div class="text">Exteriorul Clădirii</div>
+                    </div>
+                
+                    <div class="mySlides fade" name = "slider10">
+                        <div class="numbertext">3 / 3</div>
+                            <img src="https://www.ziuadevest.ro/wp-content/uploads/2015/04/muzeul-satului-banatean-timisoara.jpg" style="width:100%">
+                        <div class="text">Exteriorul clădirii</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+                </div>
+                
+                <script> currentSlide(1,1)</script>
+
+                <div>
+                    <span class="dot" name="dot1" onclick="currentSlide(1,0)"></span>
+                    <span class="dot" name="dot1" onclick="currentSlide(2,0)"></span>
+                    <span class="dot" name="dot1" onclick="currentSlide(3,0)"></span>
+                </div>
+                <div id="my-rectangle">
+                    <p><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMuzeul Satului Bănățean este situat în Timișoara. Acesta este singurul muzeu cu profil etnografic din România care cuprinde centrul civic al satului, format din Primărie, Biserică, Școală, Casă Națională și birt. În urma unei inițiative lansate de Asociația foștilor deportați în Bărăgan a fost construită în incinta Muzeului Satului Bănățean o replică fidelă a unei case de pământ bătut, acoperită cu paie, așa cum au fost obligați deportații să-și construiască în plin câmp.</strong></p>
+                </div>
+            </div>
+
+
+            <div>
+        </div>
+        <div class="barajos"></div>
+
+        <script>
+            var slideIndex = new Array(1);
+            slideIndex[0]=1;
+
+            showSlides(1, 0);  
+
+
+            function plusSlides(n, slideshownumber) 
+            {
+            slideIndex[slideshownumber] = slideIndex[slideshownumber] + n; 
+            showSlides( slideIndex[slideshownumber], slideshownumber );
+            }
+
+            function currentSlide(n, slideshownumber) 
+            {
+            slideIndex[slideshownumber] = n;
+            showSlides(slideIndex[slideshownumber], slideshownumber);
+            }
+
+            function showSlides(n, slideshownumber) 
+            {
+                var i;
+                var slideshowname = "slider" + slideshownumber;
+                var slides = document.getElementsByName(slideshowname);
+                var dotname = "dot" + slideshownumber;
+                var dots = document.getElementsByName(dotname);
+
+                if (n > slides.length) 
+                {
+                    slideIndex[slideshownumber] = 1;
+                }
+
+                if (n < 1) 
+                {
+                    slideIndex[slideshownumber] = slides.length;
+                }
+
+                for (i = 0; i < slides.length; i++) 
+                {
+                    slides[i].style.display = "none";
+                }
+
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+
+                slides[slideIndex[slideshownumber]-1].style.display = "block";
+                dots[slideIndex[slideshownumber]-1].className += " active";
+            } 
+        </script>
+
+    </body>
+</html>

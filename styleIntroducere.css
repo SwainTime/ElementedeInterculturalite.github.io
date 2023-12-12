@@ -1,0 +1,249 @@
+body {
+    overflow-x: hidden;
+    font-family: Be Vietnam Pro,Roboto,Arial;
+    background-color: #E1ECF9;
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .imageHora {
+    position: active;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) , #E1ECF9) , url("HoraCropped.png");
+    width:101.5%;
+    margin-top: 0px;
+    margin-left: -8px;
+    height:250px;
+    background-size: cover;
+  }
+
+  .imageHora2 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) , rgb(255, 255, 255, 0)) , url("RomaniaTurcia.png");
+    width: 520px;
+    margin-left:30px;
+    margin-top:30px;
+    margin-right:10px;
+    height:420px;
+    border: 8px solid black;
+    border-radius: 10px;
+    background-size: cover;
+  }
+
+  .imageHarta {
+    position: active;
+    background-image: url("HartaEtnica.png");
+    width: 520px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    height:350px;
+    border: 8px solid black;
+    border-radius: 10px;
+    background-size:contain;
+    background-repeat:none;
+  }
+
+  #my-rectangle 
+  {
+    width: 700px;
+    height: 376px;
+    margin-left: 20px;
+    margin-top: 0px;
+    border-radius: 10px;
+    border: 8px solid black;
+    background-color: #609CE1;
+    align-items: center;
+    justify-content: center;
+  }
+      
+  #my-rectangle p 
+  {
+    font-size: 19px;
+    color: #091D34;
+    text-align: left;
+    padding: 20px;
+  }
+
+  #background1 
+  {
+    width: 1325px;
+    height: auto;
+    margin-left: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 8px solid black;
+    background-color: #8AB9EF;
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  #background2 
+  {
+    width: 1325px;
+    height: auto;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 8px solid black;
+    background-color: #8AB9EF;
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  #my-rectangle2 
+  {
+    width: 1270px;
+    height: 250px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-top:0px;
+    border-radius: 10px;
+    border: 8px solid black;
+    background-color: #609CE1;
+  }
+      
+  #my-rectangle2 p 
+  {
+    font-size: 19px;
+    color: #091D34;
+    padding: 20px;
+    text-align: left;
+  }
+
+  #my-sursa 
+  {
+    width: 520px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: -20px;
+    border-radius: 10px;
+    border: 8px solid black;
+    background-color: #609CE1;
+    align-items: center;
+    justify-content: center;
+  }
+      
+  #my-sursa p 
+  {
+    margin-top: -20px;
+    font-size: 24px;
+    color: #091D34;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+  position:fixed;
+  margin-top:-14px;
+  margin-left:-18px;
+  width:110%;
+  background-color: #091D34;
+  overflow: hidden;
+  z-index:1;
+  display:flex;
+  border: 4px solid rgb(255, 255, 255);
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  height:20px;
+  float: left;
+  color: white;
+  padding: 15px 171px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Change the color of links on hover */
+  .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #236AB9;
+  color: white;
+}
+
+.footer {
+  position: active;
+  bottom: 0;
+  left: 0;
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-bottom: -10px;
+  width: 110%;
+  height: 40px;
+  background-color: #091D34;
+}
+
+#my-background 
+    {
+      width:92%;
+      height: 1215px;
+      margin-left: 4%;
+      margin-top: 14px;
+      border-radius: 10px;
+      flex-wrap:wrap;
+      border: 10px solid black;
+      display:flex;
+      background-color: #BDDCFF;
+    }
+      
+
+  #my-titlu
+  {
+    width: 40%;
+    height: 100px;
+    margin-left: 28.5%;
+    border-radius: 10px;
+    border: 6px solid black;
+    background-color: #609CE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+      
+  #my-titlu p 
+  {
+    font-size: 56px;
+    color: #091D34;
+    text-align: center;
+    padding: 20px;
+  }
+  .vl {
+    border-left: 4px solid #ffffff;
+    height: 50px;
+  }
+
+  .numeProiect{
+    color:rgb(255, 255, 255);
+    text-align:center;
+    padding-top :5px;
+    padding-bottom: 5px; 
+    padding-left:10px;
+    padding-right:5px;
+    font-size:  12px;
+    background-color: #091D34;
+  }
+
+  .titluTopNav{
+    display:flex;
+  }
+
+
+  #break {
+    flex-basis: 100%;
+    height:0px;
+  }
+
+  h1{
+    text-align:left;
+    float:left;
+  }
